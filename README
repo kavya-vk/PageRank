@@ -1,0 +1,7 @@
+The files needed are pageRank.py and the data files (dolphins.csv, lesmis.csv, NCAA_football.csv)
+The Page Rank program can be run with the following command:
+python pageRank.py <filename>
+
+To change the d-value to run with different datasets, modify line 6 of the main method to pass in the corresponding d value as the final parameter to the call to pageRank. 
+For example, to run NCAA Football with d value 0.1, modify line 6:
+scores, node_scores, iterations, process_time = pageRank(adjacency_matrix, adjacency_indices, 0.1)
